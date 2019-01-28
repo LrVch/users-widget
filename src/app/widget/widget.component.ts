@@ -22,8 +22,4 @@ export class WidgetComponent {
   trackById(user: User, index) {
     return user.id;
   }
-
-  get length() {
-    return 0;
-  }
 }
