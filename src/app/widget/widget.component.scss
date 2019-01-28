@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    padding: 20px;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+    app-widget-item {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.widget-refresh {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: sans;
+
+    button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+}

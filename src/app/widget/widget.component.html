@@ -1,0 +1,8 @@
+<div (click)="onRefreshAll()"
+     class="widget-refresh"><button>refresh</button></div>
+
+<div>
+  <app-widget-item *ngFor="let user of users; trackBy: trackById"
+                   [user]="user"
+                   (change)="onChange($event)"></app-widget-item>
+</div>

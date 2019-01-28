@@ -1,0 +1,9 @@
+<div class="widget-item">
+     <img [src]="user.img"
+          alt="">
+     <span>
+          <a [attr.href]="user.href"
+             target="_blank">{{user.name}}</a>
+     </span>
+     <button (click)="onChange()">X</button>
+</div>
