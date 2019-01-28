@@ -4,7 +4,6 @@ import { UserServiceService } from './user-service.service';
 import { Subject, BehaviorSubject, Observable, of, combineLatest } from 'rxjs';
 import { startWith, map, tap, catchError, withLatestFrom, exhaustMap } from 'rxjs/operators';
 import { getRandomOffset, compbineData, mapResponse } from './utils';
-import { WidgetComponent } from './widget/widget.component';
 
 @Component({
   selector: 'app-root',
@@ -22,8 +21,6 @@ export class AppComponent implements OnInit {
   reqestUrlStream$: Observable<string>;
   reqestStream$: Observable<any>;
   users$: Observable<any>;
-
-  @ViewChild('widget') widget: WidgetComponent;
 
   constructor(private userService: UserServiceService) { }
 
